@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2HW6.Models
 {
-    public class Car
+    public abstract class Car
     {
         public int NumberCar { get; set; }
         public Manufacturer Manufacturer { get; set; }
