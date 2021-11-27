@@ -15,4 +15,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Providers\Abstract\" />
+    <Folder Include="Services\Abstract\" />
+  </ItemGroup>
+
 </Project>
