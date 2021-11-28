@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Module2HW6.Models;
 using Module2HW6.Providers.Abstract;
 using Module2HW6.Services.Abstract;
+using Module2HW6.Services;
 
 namespace Module2HW6.Services
 {
@@ -24,14 +25,30 @@ namespace Module2HW6.Services
             return _cars;
         }
 
-        public Car SearchCar()
+        public Car SearchCar(Manufacturer manufacturer, TypeBody typeBody)
         {
-            throw new NotImplementedException();
+            var car = _cars.SearchCar(manufacturer, typeBody);
+
+            return car;
         }
 
         public Car[] SortCarByFuel()
         {
-            throw new NotImplementedException();
+            Array.Sort(_cars, new CompareService());
+
+            return _cars;
+        }
+
+        public double SumCars()
+        {
+            double sum = 0;
+
+            foreach (var car in _cars)
+            {
+                sum += car.Price;
+            }
+
+            return sum;
         }
     }
 }

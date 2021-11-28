@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2HW6.Models
 {
-    public enum TypeBody
+    public class ClosedBody : Car
     {
-		Open,
-		Closed
-	}
+    }
 }

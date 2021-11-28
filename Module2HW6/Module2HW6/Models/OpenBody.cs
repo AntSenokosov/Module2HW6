@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2HW6.Models
 {
-    public enum BatteryType
+    public class OpenBody : Car
     {
-        Battery24,
-        Battery36,
-        Battery48
     }
 }
