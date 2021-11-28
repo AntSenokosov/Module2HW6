@@ -8,7 +8,7 @@ namespace Module2HW6.Models
 {
     public abstract class Car
     {
-        public int NumberCar { get; set; }
+        public string NumberCar { get; set; }
         public Manufacturer Manufacturer { get; set; }
         public string ModelCar { get; set; }
         public TypeBody TypeBody { get; set; }
