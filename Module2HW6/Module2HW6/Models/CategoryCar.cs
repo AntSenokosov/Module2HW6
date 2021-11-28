@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Module2HW6.Models
 {
-    public class ClosedBody : Car
+    public enum CategoryCar
     {
-        public ClosedBody()
-        {
-            TypeBody = TypeBody.Closed;
-        }
+        Sedan,
+        Hatchback,
+        Universal,
+        Minivan,
+        Cabriolet,
+        Roadster
     }
 }
