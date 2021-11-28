@@ -10,12 +10,10 @@ namespace Module2HW6.Providers
 {
     public class TaxiStationProvider : ITaxiStationProvider
     {
-        private readonly ITaxiStationProvider _taxiStation;
         private Car[] _cars;
 
-        public TaxiStationProvider(ITaxiStationProvider taxiStation)
+        public TaxiStationProvider()
         {
-            _taxiStation = taxiStation;
             InitCars();
         }
 

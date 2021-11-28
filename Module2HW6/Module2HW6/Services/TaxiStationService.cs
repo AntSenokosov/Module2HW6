@@ -25,7 +25,7 @@ namespace Module2HW6.Services
             return _cars;
         }
 
-        public void InfoCar(Car[] cars)
+        public void InfoCars(Car[] cars)
         {
             foreach (var car in cars)
             {
@@ -36,11 +36,6 @@ namespace Module2HW6.Services
         public void InfoCar(Car car)
         {
             Console.WriteLine(car.NumberCar + " " + car.Manufacturer + " " + car.ModelCar + " " + car.Year + " " + car.TypeBody + car.CategoryCar + " " + car.ConsumptionFuel);
-        }
-
-        public void InfoCars(Car[] cars)
-        {
-            throw new NotImplementedException();
         }
 
         public Car SearchCar(Car[] cars, Manufacturer manufacturer, TypeBody typeBody)
