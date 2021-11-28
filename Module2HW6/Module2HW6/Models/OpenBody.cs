@@ -8,5 +8,9 @@ namespace Module2HW6.Models
 {
     public class OpenBody : Car
     {
+        public OpenBody()
+        {
+            TypeBody = TypeBody.Open;
+        }
     }
 }
