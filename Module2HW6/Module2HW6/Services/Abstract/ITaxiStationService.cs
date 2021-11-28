@@ -10,9 +10,13 @@ namespace Module2HW6.Services.Abstract
     public interface ITaxiStationService
     {
         Car[] GetCars();
-        Car SearchCar(Manufacturer manufacturer, TypeBody typeBody);
-        Car[] SortCarByFuel();
+        Car SearchCar(Car[] cars, Manufacturer manufacturer, TypeBody typeBody);
+        Car[] SortCarByFuel(Car[] cars);
 
-        double SumCars();
+        double SumCars(Car[] car);
+
+        void InfoCars(Car[] cars);
+
+        void InfoCar(Car car);
     }
 }

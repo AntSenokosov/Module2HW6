@@ -25,25 +25,43 @@ namespace Module2HW6.Services
             return _cars;
         }
 
-        public Car SearchCar(Manufacturer manufacturer, TypeBody typeBody)
+        public void InfoCar(Car[] cars)
         {
-            var car = _cars.SearchCar(manufacturer, typeBody);
+            foreach (var car in cars)
+            {
+                InfoCar(car);
+            }
+        }
+
+        public void InfoCar(Car car)
+        {
+            Console.WriteLine(car.NumberCar + " " + car.Manufacturer + " " + car.ModelCar + " " + car.Year + " " + car.TypeBody + car.CategoryCar + " " + car.ConsumptionFuel);
+        }
+
+        public void InfoCars(Car[] cars)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Car SearchCar(Car[] cars, Manufacturer manufacturer, TypeBody typeBody)
+        {
+            var car = cars.SearchCar(manufacturer, typeBody);
 
             return car;
         }
 
-        public Car[] SortCarByFuel()
+        public Car[] SortCarByFuel(Car[] cars)
         {
-            Array.Sort(_cars, new CompareService());
+            Array.Sort(cars, new CompareService());
 
-            return _cars;
+            return cars;
         }
 
-        public double SumCars()
+        public double SumCars(Car[] cars)
         {
             double sum = 0;
 
-            foreach (var car in _cars)
+            foreach (var car in cars)
             {
                 sum += car.Price;
             }
