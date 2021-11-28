@@ -48,6 +48,7 @@ namespace Module2HW6.Models
 		RollsRoyce,
 		Subaru,
 		Suzuki,
+		Skoda,
 		Tesla,
 		Toyota,
 		Volkswagen,
